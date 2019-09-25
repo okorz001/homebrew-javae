@@ -4,7 +4,8 @@ class Javae < Formula
   head "https://github.com/okorz001/javae.git"
 
   depends_on :java
-  depends_on "groff" => :optional
+  # make install will use it if available
+  #depends_on "groff" => :optional
   depends_on "bats-core" => :test
 
   def install
